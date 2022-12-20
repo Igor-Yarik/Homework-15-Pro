@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Homework 15 Pro</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="product__title">Крісло Cougar Armor One</h2>
+        <div class="product">
+            <div class="product__item">
+                <img class="product__images" src="./images/product_01.png" alt="">
+            </div>
+            <div class="product__buy__item">
+                <div class="buy__item">
+                    <p class="availability">Є в наявності</p>
+                    <p class="price">2023<span> ₴</span></p>
+                    <button class="btn__buy" type="button">Купити</button>
+                </div>
+                <div class="description">
+                    <h3 class="description__title">Характеристики</h3>
+                    <p class="description__text">Крісло COUGAR Armor ONE ергономічне та настроюване (включаючи нахил 180
+                        градусів та регулювання по висоті), сидячи на
+                        ньому, ви відчуєте себе першим!</p>
+                    <ul class="description__text">
+                        <li>Неперевершений комфорт</li>
+                        <li>Регульований підлокітник 2D</li>
+                        <li>Газліфт 4 класу</li>
+                        <li>Зручне м'яке сидіння з регулюванням висоти</li>
+                    </ul>
+                    <p class="description__text">Ви хочете насолоджуватися тривалими ігровими сесіями в абсолютному
+                        комфорті? Тоді Armor ONE – це те, що вам потрібно.</p>
+                </div>
+                <div class="user__form">
+                    <h3 class="description__title">Заповніть форму замовлення</h3>
+                    <form action="">
+                        <label class="form__label">
+                            <p class="label__title">ПІБ</p>
+                            <input type="text" name="userName" id="">
+                        </label>
+
+                        <label class="form__label">
+                            <p class="label__title">Місто відправки</p>
+                            <select name="city" id="">
+                                <option value="city_0" disabled selected></option>
+                                <option value="Kyiv">Київ</option>
+                                <option value="Lviv">Львів</option>
+                                <option value="Zaporizhzhia">Запоріжжя</option>
+                                <option value="Herson">Херсон</option>
+                                <option value="Yalta">Ялта</option>
+                            </select>
+                        </label>
+                        <label class="form__label">
+                            <p class="label__title">Відділення нової пошти</p>
+                            <select name="department" id="">
+                                <option value="department_0" disabled selected></option>
+                                <option value="department_1">Відділення №1 (вул. Заболотного)</option>
+                                <option value="department_2">Відділення №2 (пр-т. Глушкова)</option>
+                                <option value="department_3">Відділення №3 (вул. Метрологічна)</option>
+                                <option value="department_4">Відділення №4 (вул. Куренівська)</option>
+                                <option value="department_5">Відділення №5 (пр-т. Науки)</option>
+                            </select>
+                        </label>
+                        <div class="form__label">
+                            <p class="label__title">Вид оплати</p>
+                            <label>
+                                <input type="radio" name="payment" value="credit" id="">
+                                При отриманні замовлення
+                            </label>
+                            <label>
+                                <input type="radio" name="payment" value="paymentСard" id="">
+                                Банківська карта
+                            </label>
+                        </div>
+                        <label class="form__label">
+                            <p class="label__title">Кількість товрау</p>
+                            <input type="number" name="" id="">
+                        </label>
+                        <label class="form__label">
+                            <p class="label__title">Коментар до замовлення</p>
+                            <textarea name="" id="" cols="30" rows="10"
+                                placeholder="Додайте коментар до замовлення"></textarea>
+                        </label>
+                        <button type="submit" class="btn__buy">Замовити</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
