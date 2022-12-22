@@ -20,7 +20,7 @@
                 <div class="buy__item">
                     <p class="availability">Є в наявності</p>
                     <p class="price">2023<span> ₴</span></p>
-                    <button class="btn__buy" type="button">Купити</button>
+                    <button class="btn__buy" type="button" onclick="viewUserForm()">Купити</button>
                 </div>
                 <div class="description">
                     <h3 class="description__title">Характеристики</h3>
@@ -38,15 +38,14 @@
                 </div>
                 <div class="user__form">
                     <h3 class="description__title">Заповніть форму замовлення</h3>
-                    <form action="">
+                    <form action="" method="post">
                         <label class="form__label">
                             <p class="label__title">ПІБ</p>
-                            <input type="text" name="userName" id="">
+                            <input type="text" name="userName" required>
                         </label>
-
                         <label class="form__label">
                             <p class="label__title">Місто відправки</p>
-                            <select name="city" id="">
+                            <select name="city">
                                 <option value="city_0" disabled selected></option>
                                 <option value="Kyiv">Київ</option>
                                 <option value="Lviv">Львів</option>
@@ -57,36 +56,40 @@
                         </label>
                         <label class="form__label">
                             <p class="label__title">Відділення нової пошти</p>
-                            <select name="department" id="">
+                            <select name="department">
                                 <option value="department_0" disabled selected></option>
-                                <option value="department_1">Відділення №1 (вул. Заболотного)</option>
-                                <option value="department_2">Відділення №2 (пр-т. Глушкова)</option>
-                                <option value="department_3">Відділення №3 (вул. Метрологічна)</option>
-                                <option value="department_4">Відділення №4 (вул. Куренівська)</option>
-                                <option value="department_5">Відділення №5 (пр-т. Науки)</option>
+                                <option value="department_№1">Відділення №1 (вул. Заболотного)</option>
+                                <option value="department_№2">Відділення №2 (пр-т. Глушкова)</option>
+                                <option value="department_№3">Відділення №3 (вул. Метрологічна)</option>
+                                <option value="department_№4">Відділення №4 (вул. Куренівська)</option>
+                                <option value="department_№5">Відділення №5 (пр-т. Науки)</option>
                             </select>
                         </label>
                         <div class="form__label">
                             <p class="label__title">Вид оплати</p>
                             <label>
-                                <input type="radio" name="payment" value="credit" id="">
+                                <input type="radio" name="payment" value="credit" required>
                                 При отриманні замовлення
                             </label>
                             <label>
-                                <input type="radio" name="payment" value="paymentСard" id="">
+                                <input type="radio" name="payment" value="paymentСard" required>
                                 Банківська карта
                             </label>
                         </div>
                         <label class="form__label">
                             <p class="label__title">Кількість товрау</p>
-                            <input type="number" name="" id="">
+                            <input type="number" name="amount" required>
                         </label>
                         <label class="form__label">
                             <p class="label__title">Коментар до замовлення</p>
-                            <textarea name="" id="" cols="30" rows="10"
+                            <textarea name="comment" cols="30" rows="10"
                                 placeholder="Додайте коментар до замовлення"></textarea>
                         </label>
-                        <button type="submit" class="btn__buy">Замовити</button>
+                        <div class="form__btn">
+                            <button type="submit" class="btn__buy">Замовити</button>
+                            <button type="button" class="btn__buy btn__cancel"
+                                onclick="closeUserForm()">Скасувати</button>
+                        </div>
                     </form>
                 </div>
             </div>
